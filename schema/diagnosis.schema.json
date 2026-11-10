@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/genegazer/dsm-5-tr-icd-10-cm/blob/main/schema/diagnosis.schema.json",
+  "title": "DSM-5-TR diagnosis and ICD-10-CM mapping",
+  "description": "A single row from the DSM-5-TR numerical listing. Multiple records may share an ICD-10-CM code.",
+  "type": "object",
+  "required": ["icd10cm", "diagnosis"],
+  "properties": {
+    "icd10cm": {
+      "type": "string",
+      "minLength": 1,
+      "description": "ICD-10-CM code as listed in the source dataset."
+    },
+    "diagnosis": {
+      "type": "string",
+      "minLength": 1,
+      "description": "DSM-5-TR disorder, condition, or problem description."
+    }
+  },
+  "additionalProperties": false
+}

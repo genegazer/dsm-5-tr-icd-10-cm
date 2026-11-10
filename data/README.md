@@ -1,0 +1,1 @@
+The source CSV should be placed at the repository root as `DSM-5-TR_ICD-10-CM_numerical_listing.csv`. Run `python scripts/csv_to_json.py` to generate `data/diagnoses.json` while preserving every source row and duplicate code-to-description mapping.
